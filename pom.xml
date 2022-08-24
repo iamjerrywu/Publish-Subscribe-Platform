@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>maven-trial</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>2.0.0-alpha6</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>gson-2.8.6</groupId>
+            <artifactId>gson-2.8.6</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/gson-2.8.6.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>spark-core-2.9.3.jar</groupId>
+            <artifactId>spark-core-2.9.3.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/spark-core-2.9.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>slf4j-api-1.7.25.jar</groupId>
+            <artifactId>slf4j-api-1.7.25.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/slf4j-api-1.7.25.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet-api-3.1.0.jar</groupId>
+            <artifactId>javax.servlet-api-3.1.0.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/javax.servlet-api-3.1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>jetty-http-9.4.31.v20200723.jar</groupId>
+            <artifactId>jetty-http-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/jetty-http-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>jetty-io-9.4.31.v20200723.jar</groupId>
+            <artifactId>jetty-io-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/jetty-io-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>jetty-server-9.4.31.v20200723.jar</groupId>
+            <artifactId>jetty-server-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/jetty-server-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>jetty-servlet-9.4.31.v20200723.jar</groupId>
+            <artifactId>jetty-servlet-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/jetty-servlet-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>jetty-util-9.4.31.v20200723.jar</groupId>
+            <artifactId>jetty-util-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/jetty-util-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>jetty-webapp-9.4.31.v20200723.jar</groupId>
+            <artifactId>jetty-webapp-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/jetty-webapp-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>jetty-xml-9.4.31.v20200723.jar</groupId>
+            <artifactId>jetty-xml-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/jetty-xml-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>websocket-server-9.4.31.v20200723.jar</groupId>
+            <artifactId>websocket-server-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/websocket-server-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>websocket-servlet-9.4.31.v20200723.jar</groupId>
+            <artifactId>websocket-servlet-9.4.31.v20200723.jar</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/jar/websocket-servlet-9.4.31.v20200723.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M6</version>
+            <type>maven-plugin</type>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoidng>UTF-8</project.build.sourceEncoidng>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+</project>
