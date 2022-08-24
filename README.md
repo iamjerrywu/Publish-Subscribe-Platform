@@ -1,14 +1,10 @@
-# Lab4: Publish-Subscribe Platform
+# Publish-Subscribe Platform
 **Member**: Sheng-Hao Wu(shengha2), Kevin Li(kli4)  
 
 ------
 ## Preface
-After finished Lab3 (DFS), Kevin and I gained a deep interest in developing distributed, tree-structural file
-system. As in Lab4 option1: "Public-Subscribe Platform", since it's mainly based on the Lab3 DFS system and 
-add on publishing and subscription features, it's an opportunity for us to enhance our skills we 
-learned in Lab3, and to take it to another level.
 
-## Lab Summary
+## Summary
 In this project, we will implement a simple text publish-subscribe platform, based on the concept of (DFS) 
 distributed file system. Original DFS, or so called broker in Pub-Sub system, serves as an intermediate layer 
 that handle input from publisher, and provides matched contents to subscribers. '
@@ -42,10 +38,6 @@ for the Pub-Sub system.
 * Storage: `/storage_size`, `/storage_read`, `/storage_write` 
 
 <img src="dfs.png"/>
-
-**Note**: 
-1. For more details about DFS, please refer to Lab3 handout. 
-2. Newly implemented API in Lab4 is also included in the API document
 
 ### Publisher
 The publisher is one kind of client that provide content to the system. Registration is required including assignment 
